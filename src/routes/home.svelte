@@ -13,6 +13,7 @@
     --search-box-height: 2.5rem;
     --main-spacing: 0.6rem;
     --main-spacing-sum: var(--main-spacing) * 2;
+    --max-width: 720px;
   }
   :global(*) {
     box-sizing: border-box;
@@ -20,6 +21,10 @@
 
   .container {
     padding: 0 0.6rem;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .search-bar {
@@ -27,11 +32,12 @@
     top: 0;
     height: var(--search-box-height);
     width: calc(100% - var(--main-spacing-sum));
-    max-width: calc(var(--max-width) - var(--main-spacing-sum));
+    max-width: var(--max-width);
   }
 
   .cards {
     margin-top: calc(var(--search-box-height) + var(--main-spacing));
+    width: 100%;
   }
 </style>
 

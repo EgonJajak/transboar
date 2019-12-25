@@ -1,6 +1,7 @@
 <script>
   import Image from './Image.svelte';
   export let card;
+  export let fillHeight;
 
   $: alt = card.transName;
 
@@ -9,4 +10,4 @@
   }
 </script>
 
-<Image pathGetter={pathGetter(card)} alt/>
+<Image pathGetter={pathGetter(card)} fillHeight={fillHeight} alt/>

@@ -6,4 +6,13 @@
   export let cardName;
 </script>
 
-<FullScreenCard card={getCardByName(cardName)} onClose={()=> goTo('/')} />
+<div>
+  <FullScreenCard card={getCardByName(cardName)} onClose={()=> goTo('/')} />
+</div>
+
+<style>
+  div {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+</style>

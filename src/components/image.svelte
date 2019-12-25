@@ -1,11 +1,16 @@
 <script>
   export let pathGetter;
+  export let fillHeight;
   export let alt;
 </script>
 
 <style>
- img {
+ img:not(.fill-height) {
     width: 100%;
+  }
+
+  .fill-height {
+    height: 100%;
   }
 </style>
 
@@ -15,7 +20,8 @@
   <source media="(max-width: 360px)" srcset={pathGetter(360)}>
   <img
     src={pathGetter(720)}
-    {alt} 
+    {alt}
+    class:fill-height="{fillHeight}"
     data-test-image
   >
 </picture>
