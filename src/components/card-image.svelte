@@ -5,9 +5,14 @@
 
   $: alt = card.transName;
 
-  function pathGetter({ type, name }) {
-    return (size) => `/cards/${type}/${size}/${name}.jpg`;
+  function pathGetter({ type, fileName, fileTypes = []}) {
+    if (!fileTypes || !fileTypes.length){
+      throw new Error('Datasource`s card item must have available fileTypes set');
+    }
+
+    const fileType = fileTypes[0];
+    return (size) => `/cards/${type}/${size}/${fileName}.${fileType}`;
   }
 </script>
 
-<Image pathGetter={pathGetter(card)} fillHeight={fillHeight} alt/>
+<Image pathGetter={pathGetter(card)} {fillHeight} {alt}/>

@@ -3,7 +3,8 @@ const card = {
   name: '_cardBackground',
   type: 'no-card',
   transName: "Žádná karta nenalezena",
-  fileName: "_cardBackground.jpg",
+  fileName: "_cardBackground",
+  fileTypes: ["jpg"],
   transText: "Žádný překlad"
 }
 

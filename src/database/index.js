@@ -40,5 +40,6 @@ export const isNoCard = card => {
 
 export const dataSource = cards.map((card, index) => {
   card.id = index;
+  card.fileName = encodeURIComponent(card.name);
   return card;
 });
