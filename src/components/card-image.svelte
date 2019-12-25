@@ -5,7 +5,7 @@
   $: alt = card.transName;
 
   function pathGetter({ type, name }) {
-    return (size) => encodeURIComponent(`/cards/${type}/${size}/${name}.jpg`);
+    return (size) => `/cards/${type}/${size}/${name}.jpg`;
   }
 </script>
 

@@ -24,6 +24,7 @@
 
   .search-bar {
     position: fixed;
+    top: 0;
     height: var(--search-box-height);
     width: calc(100% - var(--main-spacing-sum));
     max-width: calc(var(--max-width) - var(--main-spacing-sum));
