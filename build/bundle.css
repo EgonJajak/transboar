@@ -1,6 +1,0 @@
-:root{--search-box-height:2.5rem;--main-spacing:0.6rem;--main-spacing-sum:var(--main-spacing) * 2}*{box-sizing:border-box}.container.svelte-1ilh3d6{padding:0 0.6rem}.search-bar.svelte-1ilh3d6{position:fixed;height:var(--search-box-height);width:calc(100% - var(--main-spacing-sum));max-width:calc(var(--max-width) - var(--main-spacing-sum))}.cards.svelte-1ilh3d6{margin-top:calc(var(--search-box-height) + var(--main-spacing))}
-input.svelte-1adqgu5{width:100%;height:100%;line-height:24px;font-size:24px;border:1px solid black;border-radius:5px;padding:0 0.5em}
-.container.svelte-1cznnnz{width:100%;max-width:var(--max-width);position:absolute;top:0;left:0;padding:var(--main-spacing)}.img.svelte-1cznnnz{width:100%;display:block;cursor:pointer}p.svelte-1cznnnz{display:block;margin:1em 0.5em;line-height:normal}
-img.svelte-1udjkgj{width:100%}
-
-/*# sourceMappingURL=bundle.css.map */
