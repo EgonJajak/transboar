@@ -1,8 +1,12 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const {DefinePlugin} = require('webpack')
 const path = require('path');
 
 const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
+
+const PROD_BASE_URL = JSON.stringify('/transboar');
+const LOCAL_BASE_URL = JSON.stringify('');
 
 module.exports = {
 	entry: {
@@ -49,6 +53,10 @@ module.exports = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: '[name].css'
+		}),
+		new DefinePlugin({
+			PRODUCTION: prod,
+			BASE_URL: prod ? PROD_BASE_URL : LOCAL_BASE_URL
 		})
 	],
 	devtool: prod ? false: 'source-map'
