@@ -20,7 +20,7 @@
       cardName: context.params.name
     };
   });
-
+  router.base(BASE_URL);
   router.start({hashbang: true});
 </script>
 
