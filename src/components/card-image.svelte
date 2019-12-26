@@ -2,6 +2,7 @@
   import Image from './Image.svelte';
   export let card;
   export let fillHeight;
+  export let lazyLoad;
 
   $: alt = card.transName;
 
@@ -15,4 +16,4 @@
   }
 </script>
 
-<Image pathGetter={pathGetter(card)} {fillHeight} {alt}/>
+<Image pathGetter={pathGetter(card)} {fillHeight} {alt} {lazyLoad}/>
