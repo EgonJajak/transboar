@@ -4,10 +4,14 @@
   import goTo from "page";
 
   export let cardName;
+
+  function goBack(){
+    window.history.back();
+  }
 </script>
 
 <div>
-  <FullScreenCard card={getCardByName(cardName)} onClose={()=> goTo('/')} />
+  <FullScreenCard card={getCardByName(cardName)} onClose={goBack} />
 </div>
 
 <style>
