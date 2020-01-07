@@ -48,6 +48,7 @@
       <a
         href={`card/${card.name}`}
         in:fly={{ y: 500, duration: FLY_DURATION, delay: getDelayForIndex(cards.length, index), easing: expoInOut }}
+        data-test-card-previews="link"
       >
         <CardImage {card} lazyLoad={true} />
       </a>

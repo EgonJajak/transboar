@@ -8,6 +8,8 @@ export const getCardByName = (cardName, cards = dataSource) => {
   );
 };
 
+ //TODO: hill nenajde hills kartu !!
+
 export const getCardsByText = (value, cards = dataSource) => {
   const inputValue = value.trim().toLowerCase();
   const inputLength = inputValue.length;

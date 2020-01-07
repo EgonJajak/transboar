@@ -1,7 +1,7 @@
 <script>
   import Image from './Image.svelte';
   export let card;
-  export let fillHeight;
+  export let fillHeight = false;
   export let lazyLoad;
 
   $: alt = card.transName;
